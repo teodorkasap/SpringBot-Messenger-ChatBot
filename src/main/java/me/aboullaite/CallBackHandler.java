@@ -23,8 +23,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Date;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -128,8 +128,18 @@ public class CallBackHandler {
                 switch (messageText.toLowerCase()) {
 
 
-                    case "yo":
-                        sendTextMessage(senderId, "Hello, What I can do for you ? Type the word you're looking for");
+                    case "*merhaba*":
+                        sendTextMessage(senderId, "Merhaba, ben SportifHayat.com chat robotutum. " +
+                                "Aşağıdaki kategorilerin hangileri için bilgi almak istiyorsunuz?");
+                        sendTextMessage(senderId, "koşu ayakkabıları");
+                        sendTextMessage(senderId, "on-running");
+                        sendTextMessage(senderId, "kompresyon tekstilleri");
+                        sendTextMessage(senderId, "compressport");
+                        sendTextMessage(senderId, "yonex tenis raketleri");
+                        sendTextMessage(senderId, "yonex badminton raketleri");
+                        sendTextMessage(senderId, "diğer konular için: iletisim@sportifhayat.com " +
+                                "veya 0212 248 1529 dahili 101 veya 102 den arkadaşlarımız ile" +
+                                " iletişime geçebilirsiniz...");
                         break;
 
                     case "great":

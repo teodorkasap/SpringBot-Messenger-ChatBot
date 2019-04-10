@@ -1,6 +1,6 @@
 messenger4j:
-  appSecret:
-  verifyToken :
+  appSecret:19fbe09c35a652cfd23404b0c146784f
+  verifyToken:90cc4de6af20f042b4fbc4c5fd198596
   pageAccessToken:
 
 logging:
